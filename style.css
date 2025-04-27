@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+   
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1280px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.main > .box{
+    width: 100%;
+    height: 70vh;
+    opacity: 0.4;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+.logo{
+    width: 118px;
+    position: relative;
+    z-index: 1;
+}
+nav button{
+    position: relative;
+    z-index: 1;
+}
+nav{
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 60vw;
+    margin: auto/* TO CENTER THE DIV ON MIDDLE OF X AXIS WITHOUT USING AN EXTRA CONTAINER  */ 
+}
+.hero{
+    color: white;
+    height: calc(100% - 62px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px 23px;
+    text-align: center;
+}
+.hero> :nth-child(1){
+    font-size: 48px;
+    font-weight: 800;
+    font-family: "Martel Sans", sans-serif;
+}
+.hero :nth-child(2){
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.hero :nth-child(3){
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.inputt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.inputt > .started{
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    background-color: red;
+    height: 5vh;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+    margin-top: 40px;
+    padding: 10px 20px ;  
+    cursor: pointer;    
+}
+.hero input{
+    height: 5vh;
+    width : 270px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+    padding: 0px 20px;
+    cursor:auto;    
+} 
+.seperation{
+    height: 9px;
+    background-color: rgb(48, 47, 47);
+    margin-bottom: 50px;
+    width: 1;
+}
+.language{
+    padding: 6px;
+    border: 1px solid rgb(160, 159, 159);
+    background-color: rgba(0, 0, 0, 0.527);
+    color: rgba(255, 240, 240, 0.993);
+    cursor: pointer;
+}
+.sign-in{
+    padding: 6px;
+    background-color: red;
+    border: 0;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor:pointer;
+    z-index: 1;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    color: white;
+    width: 80vw;
+    margin: auto;
+    height: 45vh;
+    padding-bottom: 20px;
+}
+.first>.secImg{
+    position: relative;
+    width: 400px;
+    height: 305px;
+}
+.secImg>img{
+    
+    width: 400px;
+    position: relative;
+    z-index: 1;
+}
+.secImg>video{
+    position: absolute;
+    right: 50px;
+    width: 300px;
+    top: 40px;
+    height: 200px;
+
+}
+.secText{
+    display: flex;
+    flex-direction: column; 
+    font-size: 18px; 
+    margin: 20px; 
+}
+.secText :nth-child(1){
+    font-size: 40px;
+    font-weight: 800;
+}
+.faq{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.faq h2{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+.faqbox{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(44, 42, 42);
+    font-size: 20px;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.faqbox:hover{
+    background-color: rgb(56, 54, 54);
+}
+footer {
+    color: rgb(112, 108, 108);
+    max-width: 60vw;
+    margin: auto;
+   
+}
+a{
+    color: rgb(105, 104, 104);
+    text-decoration: none;
+}
+
+footer .questions {
+    padding-bottom: 34px;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.languagee{
+    padding: 6px;
+    border: 1px solid rgb(85, 81, 81);
+    background-color: rgba(0, 0, 0, 0.527);
+    color: rgb(102, 99, 99);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 430px){
+    .hero> :nth-child(1){
+        font-size: 30px;
+        font-weight: 800;
+        font-family: "Martel Sans", sans-serif;
+    }
+    .hero :nth-child(2){
+        font-size: "martel sans";
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    .inputt > .started {
+        min-width: fit-content;
+        font-size: 12px; 
+        padding: 8px 16px;
+        font-weight: 600;    }
+    nav{
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 90vw;
+        margin: auto/* TO CENTER THE DIV ON MIDDLE OF X AXIS WITHOUT USING AN EXTRA CONTAINER  */ 
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 70vw;
+        margin: auto;
+        height: 50vh;
+    }
+    .secImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .secImg>img{
+    
+        width: 320px;
+        position: relative;
+        z-index: 1;
+    }
+    .secImg>video{
+        position: absolute;
+        right: 80px;
+        width: 250px;
+        top: 40px;
+         height: 200px; 
+    
+    }
+      
+    .secText{
+        display: flex;
+        flex-direction: column; 
+        font-size: 12px; 
+          
+    }
+    .secText :nth-child(1){
+        font-size: 30px;
+        font-weight: 800;
+    }
+    
+    .faq h2{
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .footer {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr ;
+        color: white;
+    }
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+     
+}
